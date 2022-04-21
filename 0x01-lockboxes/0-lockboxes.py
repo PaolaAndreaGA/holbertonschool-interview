@@ -2,7 +2,7 @@
 
 
 def canUnlockAll(boxes):
-    """method that determines if all the boxes can be opened."""
+    """Unlock array of boxes of keys with indices"""
     size = len(boxes)
     checker = {}
     index = 0
