@@ -6,7 +6,7 @@ def canUnlockAll(boxes):
     size = len(boxes)
     checker = {}
     index = 0
-    
+
     for keys in boxes:
         if len(keys) == 0 or index == 0:
             checker[index] = -1  # -1 means box is empty
