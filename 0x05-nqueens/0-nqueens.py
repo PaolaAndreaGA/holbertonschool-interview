@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-
+""" Solving n queens """
 
 
 import sys
 
 
-
+# error handling for argv[1]
 
 if __name__ == "__main__":
     if len(sys.argv) == 1 or len(sys.argv) > 2:
@@ -21,7 +21,7 @@ if __name__ == "__main__":
         print("N must be at least 4")
         sys.exit(1)
 
-
+# n queens methods
 
     coords = []
 
@@ -64,7 +64,7 @@ if __name__ == "__main__":
             del coords[-1]
         return safe_queens
 
-
+# sets base case for recursion
 
     coords = solveNqueens(coords, 0)
 
